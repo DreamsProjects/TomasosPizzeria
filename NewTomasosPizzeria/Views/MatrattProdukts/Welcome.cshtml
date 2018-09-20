@@ -1,0 +1,46 @@
+﻿@model NewTomasosPizzeria.Models.MenuModel
+
+@{
+	ViewData["Title"] = "Välkommen";
+}
+
+
+<form>
+	<div id="meny"><h1>Meny</h1></div>
+	<div class="row container-fluid" id="meny">
+		<div class="col-sm-8 col-sm-offset-2 menu-col content">
+			@foreach (var type in @Model.Types)
+			{
+				var typ = type.MatrattTyp1;
+				<h1 class="menutype">@type.Beskrivning</h1>
+				<br />
+				<hr />
+				foreach (var dish in @Model.Dishes.Where(x => x.MatrattTyp == typ).OrderBy(x => x.Pris))
+				{
+					var id = @dish.MatrattId;
+					<h3>@dish.MatrattNamn</h3>
+					<h4>@dish.Beskrivning</h4>
+					<br />
+					<ul class="a">
+						@foreach (var con in @Model.DishConnection.Where(x => x.MatrattId == id).ToList())
+						{
+							var prod = @Model.Ingredients.SingleOrDefault(x => x.ProduktId == con.ProduktId);
+							<li class="a">@prod.ProduktNamn</li>
+						}
+					</ul>
+
+					<h3 align="right">Pris: @dish.Pris:-</h3>
+					<input type="submit" asp-controller="MatrattProdukts" asp-route-id="@dish.MatrattId" asp-action="AddToCart" class="btn btn-primary btn-default" value="Lägg i varukorgen" />
+					<hr />
+				}
+				<br />
+				<br />
+			}
+		</div>
+		<a asp-controller="MatrattProdukts" asp-action="CheckOut">Gå till kassan</a>
+	</div>
+</form>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

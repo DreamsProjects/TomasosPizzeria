@@ -1,0 +1,39 @@
+﻿@model NewTomasosPizzeria.Models.Kund
+
+@{
+	ViewData["Title"] = "Radera";
+}
+
+<h2>Ta bort profil</h2>
+
+<div>
+	<hr />
+	<dl class="dl-horizontal" id="Delete">
+		<dt>För och Efternamn: </dt>
+		<dd id="text">@Model.Namn</dd>
+
+		<dt>Adress:</dt>
+		<dd id="text">@Model.Gatuadress</dd>
+
+		<dt>Postnummer:</dt>
+		<dd id="text">@Model.Postnr</dd>
+
+		<dt>Postort:</dt>
+		<dd id="text">@Model.Postort</dd>
+
+		<dt>Emailadress:</dt>
+		<dd id="text">@Model.Email</dd>
+
+		<dt>Telfonnummer:</dt>
+		<dd id="text">@Model.Telefon</dd>
+
+		<dt>Användarnamn:</dt>
+		<dd id="text">@Model.AnvandarNamn</dd>
+	</dl>
+
+	<form asp-action="Delete">
+		<input type="hidden" asp-for="KundId" />
+		<input type="submit" value="Radera" class="btn btn-default" />
+		<a asp-action="Index">Tillbaka till profil</a>
+	</form>
+</div>

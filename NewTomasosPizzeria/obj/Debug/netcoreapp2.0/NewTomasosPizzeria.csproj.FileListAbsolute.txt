@@ -1,0 +1,11 @@
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\bin\Debug\netcoreapp2.0\NewTomasosPizzeria.deps.json
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\bin\Debug\netcoreapp2.0\NewTomasosPizzeria.runtimeconfig.json
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\bin\Debug\netcoreapp2.0\NewTomasosPizzeria.runtimeconfig.dev.json
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\bin\Debug\netcoreapp2.0\NewTomasosPizzeria.dll
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\bin\Debug\netcoreapp2.0\NewTomasosPizzeria.pdb
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.csproj.CoreCompileInputs.cache
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.AssemblyInfoInputs.cache
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.AssemblyInfo.cs
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.dll
+c:\users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.pdb
+C:\Users\emma\source\repos\NewTomasosPizzeria\NewTomasosPizzeria\obj\Debug\netcoreapp2.0\NewTomasosPizzeria.csprojAssemblyReference.cache

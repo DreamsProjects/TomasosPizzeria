@@ -1,0 +1,47 @@
+﻿@model IEnumerable<NewTomasosPizzeria.Models.Kund>
+
+@{
+	ViewData["Title"] = "Kund info";
+}
+
+<h2>Din kund information</h2>
+<table class="table" id="div">	
+	<thead>
+		<tr>
+			<th>Namn</th>
+
+			<th>Adress</th>
+
+			<th>Postnummer</th>
+
+			<th>Postort</th>
+
+			<th>Emailadress</th>
+
+			<th>Telefonnummer</th>
+
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.Namn</td>
+				<td>@item.Gatuadress</td>
+				<td>@item.Postnr</td>
+				<td>@item.Postort</td>
+				<td>@item.Email</td>
+				<td>@item.Telefon</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.KundId">Ändra personuppgifter</a> |
+					<a asp-action="Delete" asp-route-id="@item.KundId">Ta bort din profil</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

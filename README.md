@@ -1,2 +1,0 @@
-# TomasosPizzeria
-Pizzeria med sessions

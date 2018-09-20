@@ -1,0 +1,43 @@
+﻿@model NewTomasosPizzeria.Models.MenuModel
+
+@{
+	ViewData["Title"] = "Beställd Order:";
+}
+<h2>Beställd order:</h2>
+
+<div id="gray" class="row container-fluid">
+	<div>
+
+		<dl class="dl-horizontal">
+			@foreach (var item in @Model.Orders)
+			{
+				<dt>OrderID: </dt>
+				<dd>@item.BestallningId</dd>
+
+				<dt>Namn och efternamn:</dt>
+				<dd>@item.Kund.Namn</dd>
+				<dt>Adress: </dt>
+				<dd>@item.Kund.Gatuadress</dd>
+				<dt>Postort:</dt>
+				<dd>@item.Kund.Postort</dd>
+				<dt>Postnummer: </dt>
+				<dd>@item.Kund.Postnr</dd>
+				<dt>Total belopp:</dt>
+				<dd>@item.Totalbelopp</dd>
+				<dt>Beställt: </dt>
+				<dd>@item.BestallningDatum</dd>
+			}
+
+			@foreach (var item in Model.Dishes)
+			{
+				<dt>Pizzor beställda:</dt>
+				<dd>@item.MatrattNamn</dd>
+			}
+		</dl>
+	</div>
+</div>
+
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

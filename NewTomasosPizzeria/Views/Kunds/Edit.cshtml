@@ -1,0 +1,67 @@
+﻿@model NewTomasosPizzeria.Models.Kund
+
+@{
+    ViewData["Title"] = "Ändra uppgifter";
+}
+
+<h4>Kunduppgifter</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-controller="Kunds">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="KundId" />
+            <div class="form-group">
+                <label>För och efternamn: </label>
+                <input asp-for="Namn" class="form-control" />
+                <span asp-validation-for="Namn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Adress: </label>
+                <input asp-for="Gatuadress" class="form-control" />
+                <span asp-validation-for="Gatuadress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Postnummer: </label>
+                <input asp-for="Postnr" class="form-control" />
+                <span asp-validation-for="Postnr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Postort: </label>
+                <input asp-for="Postort" class="form-control" />
+                <span asp-validation-for="Postort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Emailadress: </label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Telefonnummer: </label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Användarnamn: </label>
+                <input asp-for="AnvandarNamn" class="form-control" />
+                <span asp-validation-for="AnvandarNamn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Lösenord: </label>
+                <input asp-for="Losenord" class="form-control" />
+                <span asp-validation-for="Losenord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Spara" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Tillbaka till profil</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

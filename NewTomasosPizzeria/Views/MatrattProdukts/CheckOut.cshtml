@@ -1,0 +1,26 @@
+﻿@model List<NewTomasosPizzeria.Models.Matratt>
+
+@{
+	ViewData["Title"] = "Checka ut";
+}
+
+<h2>Saker i varukorgen:</h2>
+<form>
+	<div class="row container-fluid" id="meny">
+		<div class="col-sm-8 col-sm-offset-2 menu-col content">
+
+
+			@foreach (var product in Model)
+			{
+				<h3>@product.MatrattNamn &ensp;</h3>
+				<h3>@product.Pris :- </h3>
+				<input type="submit" asp-controller="MatrattProdukts" name="id" asp-route-id="@product.MatrattId" asp-action="RemoveFromCart" class="btn btn-primary btn-default" value="Ta bort från varukorg" />
+				<hr />
+			}
+
+			<h3 id="black">Total summa: @Model.Sum(x => x.Pris) kr</h3>
+
+			<input type="submit" asp-controller="MatrattProdukts" asp-action="Sent" class="btn btn-primary btn-default" value="Skicka beställning" />
+		</div>
+	</div>
+</form>

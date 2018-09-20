@@ -1,0 +1,88 @@
+﻿body 
+{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.bg 
+{
+	background-image: url("pizza.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content 
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p 
+{
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] 
+{
+	width: 100%;
+}
+
+/* QR code generator */
+#qrCode 
+{
+	margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) 
+{
+	/* Hide captions */
+	.carousel-caption 
+	{
+		display: none;
+	}
+}
+
+#Header 
+{
+	font-family: 'Palatino Linotype';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#rightSide 
+{
+	margin-right: 50px;
+}
+
+h1,h3 
+{
+	color: white;
+}
+
+#meny {
+	background-color: rgba(239, 196, 118, 0.40);
+
+	text-align: center;
+	height: auto;
+	width:  auto;
+	margin-top: 100px;
+}
+
+#textar {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#texts {
+	color: black;
+}
