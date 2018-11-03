@@ -13127,15 +13127,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\emma\\source\\repos\\NewTomasosPizzeria\\NewTomasosPizzeria\\NewTomasosPizzeria.csproj",
+      "projectUniqueName": "C:\\Users\\emma\\source\\repos\\TomasosPizzeria\\NewTomasosPizzeria\\NewTomasosPizzeria.csproj",
       "projectName": "NewTomasosPizzeria",
-      "projectPath": "C:\\Users\\emma\\source\\repos\\NewTomasosPizzeria\\NewTomasosPizzeria\\NewTomasosPizzeria.csproj",
+      "projectPath": "C:\\Users\\emma\\source\\repos\\TomasosPizzeria\\NewTomasosPizzeria\\NewTomasosPizzeria.csproj",
       "packagesPath": "C:\\Users\\emma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emma\\source\\repos\\NewTomasosPizzeria\\NewTomasosPizzeria\\obj\\",
+      "outputPath": "C:\\Users\\emma\\source\\repos\\TomasosPizzeria\\NewTomasosPizzeria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
